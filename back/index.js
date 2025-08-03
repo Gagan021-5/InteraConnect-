@@ -8,7 +8,7 @@ const port = 3000 || process.env.PORT;
 
 //Middlewares 
 app.use(cors({
-    origin:"http://localhost:5173",
+    origin:"https://interaconnectfrontend.onrender.com",
     credentials:true
 }))
 app.use(express.json());
