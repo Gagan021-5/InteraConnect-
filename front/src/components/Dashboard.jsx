@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem("user")); // Logged-in user
+  const user = JSON.parse(localStorage.getItem("user"));
 
   const [interns, setinterns] = useState([]);
 
@@ -17,7 +17,7 @@ const Dashboard = () => {
     const fromback = async () => {
       try {
         const response = await axios.get(
-          "http://localhost:3000/intern/dashboard"
+          "https://interaconnectback-t96q.onrender.com"
         );
         setinterns(response.data);
       } catch (err) {
