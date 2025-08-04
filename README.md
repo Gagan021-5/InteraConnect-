@@ -53,11 +53,11 @@
 > ![Homepage](https://i.postimg.cc/htm7TyNs/Screenshot-2025-08-04-211724.png)
 
 > Login & Signup:
-> ![Login](./screenshots/login.png)
-> ![Signup](./screenshots/signup.png)
+> ![Login](https://i.postimg.cc/brMs2kT4/Screenshot-2025-08-04-211855.png)
+> ![Signup](https://i.postimg.cc/QxTMyBSx/Screenshot-2025-08-04-211933.png)
 
 > Intern Dashboard:
-> ![Dashboard](./screenshots/dashboard.png)
+> ![Dashboard](https://i.postimg.cc/zvmfz8G1/Screenshot-2025-08-04-212105.png)
 
 ---
 
