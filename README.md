@@ -141,7 +141,7 @@ interaconnect/
 
 ---
 
-## 🙌 Credits
+## Made By
 
 * Designed & Developed by **Gagan Singh**
 * Badge Icons: Emoji Unicode
@@ -157,9 +157,6 @@ interaconnect/
 
 ## 📬 Contact
 
-Need help or want to collaborate?
-
-* Email: `gagan@example.com`
 * GitHub: [@Gagan021-5](https://github.com/Gagan021-5)
 
 ---
