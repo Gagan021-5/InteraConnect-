@@ -50,7 +50,7 @@
 ## 📸 Screenshots
 
 > Homepage (Auto Redirect to Login):
-> ![Homepage](./screenshots/homepage.png)
+> ![Homepage](https://i.postimg.cc/htm7TyNs/Screenshot-2025-08-04-211724.png)
 
 > Login & Signup:
 > ![Login](./screenshots/login.png)
