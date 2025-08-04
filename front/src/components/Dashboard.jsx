@@ -4,7 +4,7 @@ import { useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const navigate = useNavigate();
-  const user = JSON.parse(localStorage.getItem("user"));
+  const user = JSON.parse(localStorage.getItem("user")); // Logged-in user
 
   const [interns, setinterns] = useState([]);
 
@@ -17,7 +17,7 @@ const Dashboard = () => {
     const fromback = async () => {
       try {
         const response = await axios.get(
-          "https://interaconnectback-t96q.onrender.com"
+          "https://interaconnectback-t96q.onrender.com/intern/dashboard"
         );
         setinterns(response.data);
       } catch (err) {
@@ -62,18 +62,14 @@ const Dashboard = () => {
             </p>
             <div>
               <h3 className="font-semibold text-white mb-2">Rewards:</h3>
-              {Array.isArray(emp.rewards) && emp.rewards.length > 0 ? (
-                <ul className="space-y-1 text-sm text-emerald-400 font-semibold">
-                  {emp.rewards.map((val, i) => (
-                    <li key={i} className="flex items-center">
-                      <span className="mr-2">🏅</span>
-                      {val.reward} – {val.criteria}
-                    </li>
-                  ))}
-                </ul>
-              ) : (
-                <p className="text-sm text-gray-400 italic">No rewards yet</p>
-              )}
+              <ul className="space-y-1 text-sm text-emerald-400 font-semibold">
+                {emp.rewards.map((val, i) => (
+                  <li key={i} className="flex items-center">
+                    <span className="mr-2">🏅</span>
+                    {val.reward} – {val.criteria}
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         ))}
