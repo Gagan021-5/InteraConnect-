@@ -63,12 +63,18 @@ const Dashboard = () => {
             <div>
               <h3 className="font-semibold text-white mb-2">Rewards:</h3>
               <ul className="space-y-1 text-sm text-emerald-400 font-semibold">
-                {emp.rewards.map((val, i) => (
-                  <li key={i} className="flex items-center">
-                    <span className="mr-2">🏅</span>
-                    {val.reward} – {val.criteria}
-                  </li>
-                ))}
+                {Array.isArray(emp.rewards) && emp.rewards.length > 0 ? (
+                  <ul className="space-y-1 text-sm text-emerald-400 font-semibold">
+                    {emp.rewards.map((val, i) => (
+                      <li key={i} className="flex items-center">
+                        <span className="mr-2">🏅</span>
+                        {val.reward} – {val.criteria}
+                      </li>
+                    ))}
+                  </ul>
+                ) : (
+                  <p className="text-sm text-gray-400 italic">No rewards yet</p>
+                )}
               </ul>
             </div>
           </div>
